@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+    body {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    button:active {
+      background-color: #2d289e;
+      color: white;
+    }
+
+    button {
+      outline: none;
+      background-color: #3d34eb;
+      height: 40px;
+      color: white;
+      font-weight: bold;
+      border-radius: 3px;
+      font-size: 14px;
+      border: none;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0 10px;
+    }
+
+    ul li  {
+      overflow-wrap: break-word;
+      margin: 10px 0;
+    }
+
+    #detailsButton {
+      color: #3d34eb;
+      height: 40px;
+      background-color: white;
+      margin-top: 5px;
+    }
+
+    #detailsButton:active {
+      background-color: #2d289e;
+      color: white;
+    }
+
+
+  </style>
+</head>
+<body>
+<script src="lib/jszip.min.js"></script>
+<script src="lib/jszip-utils.js"></script>
+<script src="utils/download-utils.js"></script>
+<script src="popup.js"></script>
+
+<button id="downloadButton">Download photos</button>
+<button id="detailsButton">Details &#x21f2;</button>
+<ul id="linksContainer" hidden>
+</ul>
+</body>
+</html>
